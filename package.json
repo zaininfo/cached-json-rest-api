@@ -1,0 +1,71 @@
+{
+  "name": "cached-json-rest-api",
+  "version": "0.0.1",
+  "description": "A simple REST API to store and retrieve schemaless JSON documents with fast retrievals from cache.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaininfo/cached-json-rest-api.git"
+  },
+  "keywords": [
+    "rest",
+    "mongodb",
+    "redis",
+    "docker"
+  ],
+  "author": "Zain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaininfo/cached-json-rest-api/issues"
+  },
+  "homepage": "https://github.com/zaininfo/cached-json-rest-api#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "compression": "^1.7.1",
+    "config": "^1.29.2",
+    "express": "^4.16.2",
+    "express-promise-router": "^3.0.1",
+    "express-redis-cache": "^1.0.0",
+    "express-winston": "^2.4.0",
+    "invariant": "^2.2.2",
+    "js-yaml": "^3.10.0",
+    "mongodb": "^3.0.2",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "eslint": "^4.17.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "got": "^8.0.3",
+    "jest": "^22.1.4",
+    "nodemon": "^1.14.11",
+    "standard": "^10.0.3"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-object-rest-spread"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "afterAll",
+      "afterEach",
+      "describe",
+      "it",
+      "expect"
+    ],
+    "plugins": [
+      "babel"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+app:
+  port: 3000
+log:
+  level: debug
+  errorFile: ./logs/error.log
+  otherFile: ./logs/combined.log
+cache:
+  host: localhost
+  port: 6379
+  expiryInSec: 5
+search:
+  documentsPerPage: 2
+mongo:
+  url: mongodb://localhost:27017
+  database: cached-json-rest-api
+  collection: documents

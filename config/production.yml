@@ -1,0 +1,6 @@
+log:
+  level: info
+cache:
+  host: redis
+mongo:
+  url: mongodb://mongo:27017
